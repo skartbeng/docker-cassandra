@@ -1,0 +1,9 @@
+Steps to build and Run
+1. 
+sudo docker run --name demo-cassandra -d -h sandbox cassandra:3.11
+1.1 run linking to spark cluser
+
+2.start cqlsh console
+sudo docker run -it --link demo-cassandra:cassandra --rm cassandra cqlsh cassandra
+ 
+
